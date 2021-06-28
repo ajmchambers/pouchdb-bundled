@@ -1,0 +1,32 @@
+{
+  "name": "@ajmchambers/pouchdb-prebuilt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "dev": "rollup -cw",
+    "build": "rimraf \"dist/\" && rollup -c"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/pouchdb-browser": "^6.1.3",
+    "@types/pouchdb-find": "^6.3.6",
+    "@types/pouchdb-live-find": "^0.4.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "pouchdb-browser": "^7.2.2",
+    "pouchdb-find": "^6.4.3",
+    "pouchdb-live-find": "^0.4.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.52.3",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.3.4"
+  }
+}
